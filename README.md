@@ -31,6 +31,7 @@ plaintext
 
 Copy code
 
+```
 DocQ/
 ├── main.py              # Main FastAPI application with endpoints
 ├── database.py          # Database setup and initialization
@@ -43,6 +44,8 @@ DocQ/
 │   ├── test_endpoints.py    # Tests for API endpoints and WebSocket
 │   └── test_rate_limiting.py # Tests for rate limiting functionality
 └── requirements.txt     # List of dependencies
+```
+
 * * *
 
 Setup Instructions

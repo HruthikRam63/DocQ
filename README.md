@@ -31,8 +31,18 @@ plaintext
 
 Copy code
 
-`DocQ/ │ ├── main.py              # Main FastAPI application with endpoints ├── database.py          # Database setup and initialization ├── models.py            # Database models (Document model) ├── schemas.py           # Pydantic schemas for input/output validation ├── pdf_processing.py    # PDF text extraction using PyMuPDF ├── nlp_processing.py    # NLP processing for question-answering ├── rate_limiter.py      # In-memory rate limiter for API and WebSocket ├── tests/               # Directory for test scripts │   ├── test_endpoints.py    # Tests for API endpoints and WebSocket │   └── test_rate_limiting.py # Tests for rate limiting functionality └── requirements.txt     # List of dependencies`
-
+DocQ/
+├── main.py              # Main FastAPI application with endpoints
+├── database.py          # Database setup and initialization
+├── models.py            # Database models (Document model)
+├── schemas.py           # Pydantic schemas for input/output validation
+├── pdf_processing.py    # PDF text extraction using PyMuPDF
+├── nlp_processing.py    # NLP processing for question-answering
+├── rate_limiter.py      # In-memory rate limiter for API and WebSocket
+├── tests/               # Directory for test scripts
+│   ├── test_endpoints.py    # Tests for API endpoints and WebSocket
+│   └── test_rate_limiting.py # Tests for rate limiting functionality
+└── requirements.txt     # List of dependencies
 * * *
 
 Setup Instructions

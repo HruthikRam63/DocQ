@@ -27,11 +27,7 @@ Prerequisites
 Project Structure
 -----------------
 
-plaintext
-
-Copy code
-
-```
+```plain text
 DocQ/
 ├── main.py              # Main FastAPI application with endpoints
 ├── database.py          # Database setup and initialization
@@ -53,31 +49,23 @@ Setup Instructions
 
 1.  **Clone the Repository**
     
-    bash
-    
-    Copy code
-    
-    `git clone <repo_url> cd DocQ`
-    
+    ```bash
+    git clone <repo_url> cd DocQ
+    ```
 2.  **Install Dependencies**
     
     Install the project dependencies using `requirements.txt`.
     
-    bash
-    
-    Copy code
-    
-    `pip install -r requirements.txt`
-    
+    ```bash
+    pip install -r requirements.txt
+    ```
 3.  **Initialize the Database**
     
     Run the following command to set up the SQLite database:
     
-    bash
-    
-    Copy code
-    
-    `python database.py`
+    ```bash
+    python database.py
+    ```
     
     This will create a `docq.db` SQLite database file with the required tables.
     
@@ -85,12 +73,9 @@ Setup Instructions
     
     Use `uvicorn` to run the FastAPI application.
     
-    bash
-    
-    Copy code
-    
-    `uvicorn main:app --reload`
-    
+    ```bash
+    uvicorn main:app --reload
+    ```
     By default, the app will run on `http://127.0.0.1:8000`.
     
 
@@ -110,11 +95,9 @@ API Endpoints
 
 **Example Request (using `curl`)**:
 
-bash
-
-Copy code
-
-`curl -X POST "http://127.0.0.1:8000/upload_pdf/" -F "file=@path/to/sample.pdf"`
+```bash
+curl -X POST "http://127.0.0.1:8000/upload_pdf/" -F "file=@path/to/sample.pdf"
+```
 
 ### 2\. **WebSocket Question Answering Endpoint**
 
@@ -129,12 +112,10 @@ Copy code
 
 **Example Usage (using `wscat`)**:
 
-bash
+```bash
 
-Copy code
-
-`wscat -c ws://127.0.0.1:8000/ws/question_answer/1`
-
+wscat -c ws://127.0.0.1:8000/ws/question_answer/1
+```
 After connecting, send questions, e.g., `"What is the document about?"`
 
 * * *
@@ -148,20 +129,14 @@ The project includes tests to verify the functionality of the endpoints, WebSock
 
 1.  **Navigate to the Project Directory**
     
-    bash
-    
-    Copy code
-    
-    `cd DocQ`
-    
+    ```bash
+       cd DocQ
+    ```
 2.  **Run Tests Using Pytest**
     
-    bash
-    
-    Copy code
-    
-    `pytest tests/`
-    
+    ```bash
+    pytest tests/
+    ```
     This will execute all tests in the `tests` directory, including:
     
     *   **PDF Upload Test**: Verifies the `/upload_pdf/` endpoint.
